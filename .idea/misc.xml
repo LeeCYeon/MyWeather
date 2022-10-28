@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Myweather/app/src/main/res/drawable-v24/button_circle_gradient.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/drawable-v24/button_round.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/drawable/back_round.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/drawable/dialog_round.xml" value="0.175" />
+        <entry key="..\:/Myweather/app/src/main/res/drawable/edit_text_custom.xml" value="0.175" />
+        <entry key="..\:/Myweather/app/src/main/res/drawable/round_shape_transparent.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/drawable/toast_shape.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_drawer.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_find.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_find_id.xml" value="0.19270833333333334" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_news.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_news2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/activity_splash.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/button_round.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/chartlayout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/custom_dialog.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/custom_toast.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/drawer_row_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/find_pw_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/find_tab_id.xml" value="0.2" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_find_menu_id.xml" value="0.178125" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_find_menu_pw.xml" value="0.178125" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_home.xml" value="0.2" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_mypage.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_news.xml" value="0.264" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_news2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_news_webview.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_satellite.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/fragment_main_menu_week.xml" value="0.1" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/item_chart.xml" value="0.136" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/long_week_item_row.xml" value="0.2" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/long_week_nested_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/news_listview_row.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/week_horizon_recycler_items.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/week_item_row.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/layout/week_nested_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/Myweather/app/src/main/res/menu/bottom_menu.xml" value="0.264" />
+        <entry key="..\:/Myweather/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragment.MainMenuWeekFragment"
+    android:layout_marginTop="35dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:padding="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10일 예보"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/jalnan"
+                />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/info"
+                android:id="@+id/iv_week_btn_info"
+                />
+            <LinearLayout
+                android:id="@+id/week_info"
+                android:visibility="invisible"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/spinner_round"
+                android:padding="10dp"
+                android:backgroundTint="#99ffffff"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="날씨 아이콘"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:layout_marginBottom="3dp"-->
+                <!--                        />-->
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="맑음"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/jalnan"
+                        />
+                    <ImageView
+                        android:layout_marginRight="13dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/c_sky_sun"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="구름 많음"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/jalnan"
+                        />
+                    <ImageView
+                        android:layout_marginRight="13dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/c_sky_cloudy"
+                        android:fontFamily="@font/jalnan"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="흐림"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/jalnan"
+                        />
+                    <ImageView
+                        android:layout_marginRight="13dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/c_pty_dark"
+                        />
+
+                    <ImageView
+                        android:id="@+id/week_btn_cancel"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:src="@drawable/cancel" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:paddingHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vertical_recyclerview"
+            android:clipToPadding="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+            <!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3일 예보"
+            android:padding="10dp"
+            />
+
+        <!--        단기예보용-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingHorizontal="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="390dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

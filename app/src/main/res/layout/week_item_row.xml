@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="3dp"
+    android:background="@drawable/round_shape_transparent"
+    >
+<!--   위: app:cardUseCompatPadding="true"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        >
+<!--        위: android:padding="10dp"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="요일"
+                android:textStyle="bold"
+                android:fontFamily="@font/jalnan"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜"
+                android:textSize="10dp"
+                android:fontFamily="@font/jalnan"/>
+
+            <TextView
+                android:id="@+id/n_temp_min"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/n_progressBar"
+                android:text="최저기온"
+               android:layout_marginLeft="10dp"
+                android:textColor="#0A6ECD"
+                android:fontFamily="@font/jalnan"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/n_temp_max"
+                android:text="최고기온"
+                android:layout_toRightOf="@+id/n_temp_min"
+                android:textColor="#EB5050"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/jalnan"/>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_icon"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/toggle_expand"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandable_layout"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/child_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

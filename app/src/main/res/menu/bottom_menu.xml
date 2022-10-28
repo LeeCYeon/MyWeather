@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:title="메인"
+        android:icon="@drawable/bottom_home"
+        />
+
+    <item
+        android:id="@+id/week"
+        android:enabled="true"
+        android:title="주간날씨"
+        android:icon="@drawable/bottom_weather"
+        />
+
+    <item
+        android:id="@+id/satellite"
+        android:enabled="true"
+        android:title="위성"
+        android:icon="@drawable/bottom_satellite"
+        />
+
+    <item
+        android:id="@+id/news"
+        android:enabled="true"
+        android:title="뉴스"
+        android:icon="@drawable/bottom_news"
+        />
+
+    <item
+        android:id="@+id/mypage"
+        android:enabled="true"
+        android:title="마이페이지"
+        android:icon="@drawable/bottom_user"
+        />
+</menu>

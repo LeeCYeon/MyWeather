@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment.MainMenuMypageFragment"
+    android:layout_marginTop="35dp"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/jalnan"
+        />
+
+<!--    #0066CC-->
+
+    <ImageView
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/user"
+        />
+
+
+    <TextView
+        android:id="@+id/mypage_tv_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="123님, \n안녕하세요 "
+        android:textSize="20dp"
+        android:fontFamily="@font/jalnan"/>
+
+
+    <LinearLayout
+        android:background="@drawable/back_round"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="º 회원 정보"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/jalnan"
+            />
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/mypage_btn_input_address"-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:text="주소지 변경" />-->
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_stroke"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="email"
+                android:textSize="18dp"
+                android:fontFamily="@font/jalnan"/>
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:background="#0066CC"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jalnan"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:id="@+id/mypage_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="email"
+                android:textSize="18dp"
+                android:fontFamily="@font/jalnan"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="3dp"
+            android:background="#80000000" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_email_modi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="º 이메일 수정"
+                android:fontFamily="@font/jalnan"/>
+
+            <EditText
+                android:id="@+id/mypage_ed_update_email"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_email_modi"
+                android:background="@drawable/round_stroke"
+                android:drawableLeft="@drawable/email"
+                android:fontFamily="@font/jalnan"
+                android:hint=" 이메일 재설정"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mypage_ed_update_email_check"
+                android:layout_below="@+id/mypage_ed_update_email"
+                android:text="사용 불가능"
+                android:visibility="invisible"/>
+
+
+            <Button
+                android:id="@+id/mypage_btn_update_email"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@+id/mypage_ed_update_email"
+                android:fontFamily="@font/jalnan"
+                android:padding="10dp"
+                android:text="OK"></Button>
+
+            <TextView
+                android:id="@+id/tv_pw_modi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mypage_btn_update_email"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/jalnan"
+                android:text="º 비밀번호 변경" />
+
+            <EditText
+                android:id="@+id/mypage_ed_update_pw"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pw_modi"
+                android:background="@drawable/round_stroke"
+                android:drawableLeft="@drawable/key"
+                android:fontFamily="@font/jalnan"
+                android:hint="비밀번호 재설정"
+                android:inputType="textPassword"
+                android:padding="10dp"></EditText>
+
+            <TextView
+                android:id="@+id/mypage_ed_update_pw_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mypage_ed_update_pw"
+                android:text="사용 불가능"
+
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/mypage_btn_update_pw"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="145dp"
+                android:layout_toRightOf="@+id/mypage_ed_update_pw"
+                android:fontFamily="@font/jalnan"
+                android:padding="10dp"
+                android:text="OK"></Button>
+
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/mypage_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mypage_ed_update_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="로그아웃"
+            android:fontFamily="@font/jalnan"></Button>
+
+
+
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

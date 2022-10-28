@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+        <RelativeLayout
+            android:padding="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_below="@+id/find_id_tv_verification_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/find_id_show_id_layout"
+                >
+
+
+                <TextView
+                    android:id="@+id/find_id_show_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="1234" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:id="@+id/find_id_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/find_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/jalnan"
+                    android:gravity="center"
+                    android:text="ID 찾기"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/find_id_tv"
+                    android:src="@drawable/find" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/find_id_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/find_id_layout_top"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/jalnan"
+                android:text="이메일 확인"
+                android:textSize="17dp"
+                />
+
+            <TextView
+                android:id="@+id/find_id_tv_verification_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/find_id_input_email"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="회원 정보가 없습니다. "
+                android:textColor="@color/black" />
+
+
+
+            <LinearLayout
+                android:id="@+id/find_id_input_email"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/find_id_tv_email"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/sign_up_ed_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/email"
+                    android:fontFamily="@font/jalnan"
+                    android:hint=" 이메일"
+                    android:padding="10dp"></EditText>
+
+                <Spinner
+                    android:id="@+id/find_id_email_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#9890e3" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/find_id_input_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/find_id_tv_email"
+                android:layout_alignBaseline="@+id/find_id_input_email"
+                android:layout_toRightOf="@+id/find_id_input_email"
+                android:backgroundTint="#9890e3"
+                android:fontFamily="@font/jalnan"
+                android:text="확인"
+                android:textColor="@color/white" />
+
+
+
+        </RelativeLayout>
+
+
+</FrameLayout>

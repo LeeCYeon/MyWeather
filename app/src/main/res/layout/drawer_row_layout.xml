@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/listview_shape"
+
+    >
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/drawer_favorite" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/star"
+            android:gravity="center_vertical"
+            android:text="지역명"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jalnan"/>
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tv_tempMin"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/tv_location"-->
+        <!--        android:gravity="center"-->
+        <!--        android:text="20/" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tv_tempMax"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/tv_location"-->
+        <!--        android:layout_toRightOf="@+id/tv_tempMin"-->
+        <!--        android:gravity="center"-->
+        <!--        android:text="28" />-->
+
+
+
+</RelativeLayout>
